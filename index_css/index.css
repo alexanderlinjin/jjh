@@ -124,6 +124,32 @@ header .container{
   -moz-box-shadow:0 0 10px rgba(150, 150, 150, .5);  
   box-shadow:0 0 10px rgba(150, 150, 150, .5);  
 }  
+/*footer*/
+.footer{
+    position: relative;
+    background-color: #f8f8f8;
+    padding-top: 15px;
+    width: 100%;
+    border-top: 2px solid #f1f1f1;
+}
+.footer ul{
+    text-align: center;
+}
+.footer ul:nth-child(1) li{
+    padding: 15px;
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+}
+.footer ul:nth-child(1) li a:hover{
+    text-decoration: none;
+}
+
+.footer ul:nth-child(2) li{
+    padding: 5px;
+    text-decoration: none;
+    list-style: none;
+}
 /*轮播，脚部那块自己做响应式适配各种大小屏幕，主要是高度问题*/
 @media (min-width:1200px){
     .rolling_box{
