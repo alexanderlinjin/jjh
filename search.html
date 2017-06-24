@@ -9,8 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap.offcanvas.min.css" rel="stylesheet">
     <link href="index_css/index.css" rel="stylesheet" type="text/css">
-    <link href="css/user.css" rel="stylesheet" type="text/css">
-
+    <link href="css/search.css" rel="stylesheet">
     <title>用户中心</title>
     <!--[if lt IE 9]>
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -179,54 +178,41 @@
         </div>
 
     </div>
-
+screen
 </nav>
 <!-- 顶部导航条-->
 <!--        搜索-->
-<div class="search_box">
-    <div class="container-fluid">
-        <div class="container hidden-xs bgColor">
-            <div class="row" style="height:76px">
-                <div class="search_logo col-sm-9 col-md-8 col-lg-8">
-                    <a><img src="img/jjh.png"></a>
-                    <button class="user_search  btn btn-primary" type="button" value="首页">首页</button>
-                    <button class="user_search  btn btn-primary" type="button" value="首页">账号管理</button>
-                    <button class="user_search  btn btn-primary" type="button" value="首页">服务</button>
-                </div>
-
-                <div class="user_search col-sm-3 col-md-4 col-lg-4">
-                    <div class="input-group">
-                        <input class="form-control" type="text">
-                        <span class="input-group-btn">
-          <button class="btn btn-primary" type="button">搜索</button>
+<div class="container hidden-xs">
+    <div class="row" style="height:76px">
+        <div class="logo  col-sm-4 col-md-4 col-lg-4">
+            <a><img src="img/jjh.png"></a>
+        </div>
+        <div class="search col-sm-7 col-md-7 col-lg-7">
+            <div class="input-group">
+                <input class="form-control" type="text">
+                <span class="input-group-btn">
+          <button class="btn btn-primary" type="button" style="width:120px">搜索</button>
         </span>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-    <!--        搜索-->
 </div>
+    
+    <div class=" container">
 
-<div class="container">
-    <div class="row">
-        <!--        左边下拉列表    -->
-
-        <div class="user_left hidden-xs col-sm-3 col-md-3 col-lg-3 ">
-
-
-            <div class="panel-group" role="tablist" aria-multiselectable="true">
+        <div class="screen">
+                    <div class="panel-group" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingOne">
-                        <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true"
+                        <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="false"
                            aria-controls="collapseOne">
                             交易前<span class="caret"></span>
                         </a>
                     </div>
-                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                    <div id="collapseOne" class="panel-collapse collapse " role="tabpanel"
                          aria-labelledby="headingOne">
                         <div class="panel_body">
-                            <ul>
+                            <ul class="body_ul">
                                 <li><a class="btn nav-justified" href="#">进货单</a></li>
                                 <li><a class="btn  nav-justified" href="#">收藏夹</a></li>
                                 <li><a class="btn nav-justified" href="#">交易资料管理</a></li>
@@ -242,7 +228,7 @@
                             交易前<span class="caret"></span>
                         </a>
                     </div>
-                    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel"
+                    <div id="collapseTwo" class="panel-collapse collapse " role="tabpanel"
                          aria-labelledby="headingTwo">
                         <div class="panel_body">
                             <ul>
@@ -261,7 +247,7 @@
                             交易前<span class="caret"></span>
                         </a>
                     </div>
-                    <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel"
+                    <div id="collapseThree" class="panel-collapse collapse " role="tabpanel"
                          aria-labelledby="headingThree">
                         <div class="panel_body">
                             <ul>
@@ -273,143 +259,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <!--        左边下拉列表    -->
-
-        <div class="col-sm-9 col-md-9 col-lg-9">
-            <div class="user_middle col-sm-12 col-md-12 col-lg-12 box-shadow">
-                <div class="middle_box">
-                    <div class="middle_head">
-                <span>
-                <img class="user_logo" src="img/user.png">
-                </span>
-                        <span>
-                <a>杨朋举</a>
-                <a class="editor" href="#">编辑个人资料</a>
-                </span>
-                    </div>
-                    <div class="middle_body">
-<!--                        PC端-->
-                        <ul class="nav navbar-nav hidden-xs">
-                            <li class="col-xs-4"><a href="#">待办事项</a></li>
-                            <li class="col-xs-4"><a href="#">收货地址</a></li>
-                            <li class="col-xs-4"><a href="#">收藏夹</a></li>
-                            <li class="col-xs-4"><a href="#">待付款</a></li>
-                            <li class="col-xs-4"><a href="#">待发货</a></li>
-                            <li class="col-xs-4"><a href="#">待收货</a></li>
-                            <li class="col-xs-4"><a href="#">待评价</a></li>
-                            <li class="col-xs-5"><a href="#">退款/退货</a></li>
-                        </ul>
-<!--                        phone端-->
-                        <ul class="nav navbar-nav visible-xs" style="font-size:12px;">
-                        <li class="col-xs-4"><a href="zhuce.html">关注的商品</a></li>
-                        <li class="col-xs-4"><a href="zhuce.html">关注的店铺</a></li>
-                        <li class="col-xs-4"><a href="zhuce.html">浏览记录</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-                
-
-            <div class="user_middle_2 box-shadow visible-xs"><!--            这个DIV是模板，当左拉菜单点击如我的收藏时，该DIV显示点击的内容，不再单独做页面-->
-                    <ul class="nav nav_border">
-                        <li class="col-xs-6"><a href="#">我的发布</a></li>
-                        <li class="col-xs-6"><a href="#" style="float:right"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
-                    </ul>
-                    <ul class="nav my_order">
-                        <li class="col-xs-4"><a href="#"><span class="glyphicon glyphicon-check"></span><br/>已发布</a></li>
-                        <li class="col-xs-4"><a href="#"><sapn class="glyphicon glyphicon-edit"></sapn><br/>待发布</a></li>
-                        <li class="col-xs-4"><a href="#"><sapn class="glyphicon glyphicon-book"></sapn><br/>草稿</a></li>
-                    </ul>
-                    
-                </div>
-            
-            <div class="user_middle_advice col-sm-12 col-md-12 col-lg-12 box-shadow">
-                <div class="row ">
-                    <div class="col-lg-10"><a class="btn btn-primary" style="font-size:12px;">最近浏览</a></div>
-                </div>
-                <div class="row middle_like">
-                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                        <div class="thumbnail">
-                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
-                            <div class="caption">
-                                <a href="#">商品1</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                        <div class="thumbnail">
-                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
-                            <div class="caption">
-                                <a href="#">商品1</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                        <div class="thumbnail">
-                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
-                            <div class="caption">
-                                <a href="#">商品1</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                        <div class="thumbnail">
-                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
-                            <div class="caption">
-                                <a href="#">商品1</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                        <div class="thumbnail">
-                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
-                            <div class="caption">
-                                <a href="#">商品1</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                        <div class="thumbnail">
-                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
-                            <div class="caption">
-                                <a href="#">商品1</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                        <div class="thumbnail">
-                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
-                            <div class="caption">
-                                <a href="#">商品1</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                        <div class="thumbnail">
-                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
-                            <div class="caption">
-                                <a href="#">商品1</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
+        
+        
         </div>
     </div>
-</div>
-
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>

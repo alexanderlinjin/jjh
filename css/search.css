@@ -1,0 +1,39 @@
+.screen{
+    position: relative;
+    z-index: 998;
+    border: 1px solid #f1f1f1;
+}
+.screen-tag{
+    padding: 15px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.body,.head,.foot{
+    height: 50px;
+    line-height: 50px;
+}
+.body_ul li{
+    padding: 15px;
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+}
+/*筛选自做响应式*/
+@media (min-width:1200px){
+    .screen_row{
+        width: 1130px;
+    }
+    .row1{
+        width: 80px;!importent;
+    }
+    .row2{
+        width: 960px;!importent;
+    }
+    .body_ul{
+        width: 960px;!importent;
+    }
+    .row3{
+        width: 80px;
+    }
+    
+}

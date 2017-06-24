@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
 }
+/*顶部导航栏，有PC端和手机端隐藏的元素*/
+header .container{
+    padding: 0;!importent;
+}
 .navbar{
     z-index: 999;
 }
@@ -39,6 +43,11 @@
 .search_button{
     margin-left: 5px;
 }
+.phone_user{
+    float: right;
+    padding: 0;!importent;
+}
+/*中部搜索*/
 .logo{
     text-align: center;
 }
@@ -50,6 +59,7 @@
     padding: 15px;
     list-style: none;
 }
+/*中部导航条*/
 .nav-pills{
     border-bottom: 2px solid #2780e3;
     padding-top: 20px;
@@ -58,6 +68,7 @@
     padding: 0;
     padding-bottom: 20px;
 }
+/*轮播*/
 .carousel{
     padding: 0;
 }
@@ -78,6 +89,7 @@
     width: 80px;
     height: 80px;
 }
+/*手机端轮播下一排按钮*/
 .icon{
     width: 50px;
     height: 50px;
@@ -88,7 +100,7 @@
 .phone_btn .btn:hover,.phone_btn .btn:visited{
     color: #2780e3;
 }
-
+/*商品栏目*/
 .tab_box{
     padding-right: 30px;
     padding: 0;  
@@ -112,3 +124,78 @@
   -moz-box-shadow:0 0 10px rgba(150, 150, 150, .5);  
   box-shadow:0 0 10px rgba(150, 150, 150, .5);  
 }  
+/*轮播，脚部那块自己做响应式适配各种大小屏幕，主要是高度问题*/
+@media (min-width:1200px){
+    .rolling_box{
+        height: 400px;
+    }
+    .rolling_right{
+        height: 400px;
+    }
+    .carousel{
+        height: 400px;
+    }
+    .carousel-inner{
+        height: 400px;
+    }
+    .carousel-inner .item{
+        height: 400px;!importent;
+    }
+    .carousel-inner .item img{
+        height: 400px;
+    }
+    .footer{
+        height: 200px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .rolling_box{
+        height: 300px;
+    }
+    .rolling_right{
+        height: 350px;
+    }
+    .carousel{
+        height: 350px;
+    }
+    .carousel-inner{
+        height: 350px;
+    }
+    .carousel-inner .item{
+        height: 350px;!importent;
+    }
+    .carousel-inner .item img{
+        height: 350px;
+    }
+    .footer{
+        height: 160px;
+    }r
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .rolling_box{
+        height: 300px;
+    }
+    .rolling_right{
+        height: 300px;
+    }
+    .carousel{
+        height: 300px;
+    }
+    .carousel-inner{
+        height: 300px;
+    }
+    .carousel-inner .item{
+        height: 300px;!importent;
+    }
+    .carousel-inner .item img{
+        height: 300px;
+    }
+    .footer{
+        height: 120px;
+    }
+}
+@media (max-width: 768px){
+    .footer{
+        height: 80px;
+    }
+}
