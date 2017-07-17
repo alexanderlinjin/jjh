@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>金金汇</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 <body>
 <!-- 顶部导航条-->
 <header>
-    <nav class="navbar navbar-default" >
+    <nav class="navbar navbar-default" id="nav">
         <div class="container">
             <div class="navbar-header row">
                 <!--        小于992px时显示在顶端的button-->
@@ -35,10 +35,11 @@
 
 
                 <!--        以下这个按钮实现跳转到user.html页面-->
-                <div class="col-xs-2 phone_user" >
-                    <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas-2" style="float:right">
-                        <span class="glyphicon glyphicon-user"></span>
+                <div class="col-xs-2 phone_user">
 
+                    <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas-2" style="float:right">
+
+                        <span class="glyphicon glyphicon-user"></span>
                     </button>
                 </div>
                 <!--        以上这个按钮实现跳转到user.html页面-->
@@ -118,7 +119,7 @@
 
         <div class="navbar-header">
 
-            <a class="navbar-brand" href="#" style="float:left">登录</a><a class="navbar-brand" href="#" style="float:left">注册</a><!--      跳转到登录注册界面      -->
+            <a class="navbar-brand" href="login.html" style="float:left">登录</a><a class="navbar-brand" href="zhuce.html" style="float:left">注册</a><!--      跳转到登录注册界面      -->
             <!--                    若已登录则显示用户名-->
             <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas"
                     data-target="#js-bootstrap-offcanvas-2">
@@ -130,25 +131,25 @@
         <div>
             <ul class="nav navbar-nav">
 
-                <li><a href="#">账号管理</a></li> <!--     跳转到user.html       -->
+                <li><a href="user.html">账号管理</a></li> <!--     跳转到user.html       -->
 
-                <li><a href="#">我的收藏</a></li>
+                <li><a href="user.html">我的收藏</a></li>
 
                 <li class="dropdown">
 
-                    <a href="#" class="dropdown-toggle">订单管理<span class="caret"></span></a>
+                    <a href="user.html" class="dropdown-toggle">订单管理<span class="caret"></span></a>
 
                     <ul class="dropdown-menu" role="menu">
 
-                        <li><a href="#">购物车</a></li>
+                        <li><a href="user.html">购物车</a></li>
 
-                        <li><a href="#">待发货</a></li>
+                        <li><a href="user.html">待发货</a></li>
 
-                        <li><a href="#">待收货</a></li>
+                        <li><a href="user.html">待收货</a></li>
 
-                        <li><a href="#">待评价</a></li>
+                        <li><a href="user.html">待评价</a></li>
 
-                        <li><a href="#">退款/售后</a></li>
+                        <li><a href="user.html">退款/售后</a></li>
 
                     </ul>
 
@@ -215,15 +216,15 @@
             <!-- 轮播（Carousel）项目 -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="img/timg.jpeg" alt="First slide">
+                    <img src="img/s1.jpg" alt="First slide">
                     <div class="carousel-caption">标题 1</div>
                 </div>
                 <div class="item">
-                    <img src="img/timg.jpeg" alt="Second slide">
+                    <img src="img/s2.jpg" alt="Second slide">
                     <div class="carousel-caption">标题 2</div>
                 </div>
                 <div class="item">
-                    <img src="img/timg.jpeg" alt="Third slide">
+                    <img src="img/s3.jpg" alt="Third slide">
                     <div class="carousel-caption">标题 3</div>
                 </div>
             </div>
